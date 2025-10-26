@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: url('https://www.kasandbox.org/programming-images/landscapes/mountains.png') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav {
+            background: #ff6600;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #ff6600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .destination {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination h3 {
+            margin: 10px 0;
+        }
+
+        .destination p {
+            padding: 0 10px 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button-contact {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .button-contact:hover {
+            background: #ff8533;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Travel Explorer</h1>
+    </header>
+
+    <nav>
+        <a href="#destinations">Destinos</a>
+        <a href="#info">Información</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="destinations">
+        <h2>Destinos Imperdibles</h2>
+        <div class="destinations">
+            <div class="destination">
+                <img src="https://www.kasandbox.org/programming-images/landscapes/beach-in-hawaii.png" alt="Hawái">
+                <h3>Hawái</h3>
+                <p>Disfruta de playas paradisíacas, volcanes y cultura hawaiana auténtica.</p>
+            </div>
+            <div class="destination">
+                <img src="https://www.kasandbox.org/programming-images/landscapes/paris.png" alt="París">
+                <h3>París</h3>
+                <p>La ciudad del amor te espera con su torre Eiffel y gastronomía única.</p>
+            </div>
+            <div class="destination">
+                <img src="https://www.kasandbox.org/programming-images/landscapes/japan.png" alt="Japón">
+                <h3>Japón</h3>
+                <p>Explora templos antiguos, ciudades modernas y la naturaleza impresionante.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <h2>Información General</h2>
+        <p>En Travel Explorer te ayudamos a planear tus viajes de manera segura y emocionante. Encontrarás recomendaciones, guías de viaje, y tips para disfrutar cada destino al máximo.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o quieres reservar un viaje? Contáctanos y te ayudaremos a planear tu aventura perfecta.</p>
+        <button class="button-contact">Enviar mensaje</button>
+    </section>
+
+    <footer>
+        &copy; 2025 Travel Explorer. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
